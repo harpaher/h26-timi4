@@ -1,0 +1,73 @@
+/* =====================================================
+   ÆFING 1 – Grunn-selectors   (gerum saman í tíma)
+   Skrifið CSS undir hverju skrefi. Vistið og endurhlaðið
+   síðuna í vafranum eftir hvert skref.
+   ===================================================== */
+
+
+/* 1. ELEMENT-SELECTOR
+      Gefðu <body> leturgerðina Arial (með sans-serif til vara)
+      og textalitinn #333. */
+
+      body {font-family: Arial, Arial, Helvetica, sans-serif;
+            color: #333;
+      }
+
+/* 2. ELEMENT-SELECTOR
+      Gerðu allar <h1> dökkbláar: #1b1f3b */
+
+      h1 {
+            color:#1b1f3b
+     }
+      
+
+/* 3. HÓPUN (grouping)
+      Gefðu h1 OG h2 leturgerðina Georgia (serif) í EINNI reglu. */
+
+      h1, h2 {font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+
+
+
+/* 4. CLASS-SELECTOR
+      .inngangur á að vera skáletraður (italic) og 20px. */
+
+      .inngangur {
+            font-style: italic;
+            font-size: 20px;
+      }
+
+
+/* 5. CLASS-SELECTOR
+      .mikilvaegt á að vera feitletrað og appelsínugult: #c2571a
+      Spurning: Hvers vegna verða bara tveir listaliðir appelsínugulir? */
+
+      .mikilvægt {
+            font-weight: bold;
+            color:#c2571a
+      }
+
+/* 6. ID-SELECTOR
+      #abending fær ljósgulan bakgrunn: #fff4cc */
+
+      #abending {
+            background-color:#fff4cc;
+      }
+
+
+
+/* 7. MARGIR KLASAR
+      .smatt á að vera 14px og grá: #777
+      Síðasta málsgreinin hefur BÆÐI .inngangur og .smatt.
+      Hvaða stærð vinnur – 20px eða 14px? Hvers vegna? */
+
+      .smatt {
+            font-size: 14px;
+            color:#777;
+      }
+
+
+
+/* 8. TILRAUN – universal-selector
+      Skrifið  * { color: red; }  neðst og sjáið hvað gerist.
+      Eyðið því svo aftur. */

@@ -1,0 +1,103 @@
+/* =====================================================
+   ÆFING 2 – Stigveldi, pseudo-classes & specificity
+   (gerum saman í tíma)
+   ===================================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1b1f3b;
+  max-width: 800px;
+}
+
+
+/* 1. AFKOMENDUR (bil)
+      Allir tenglar inni í <nav>: engin undirstrikun
+      (text-decoration: none) og litur #1b1f3b.
+      Takið eftir: líka "Innskrá"! */
+
+      nav a {
+            text-decoration: none;
+            color:#1b1f3b
+      }
+
+/* 2. BÖRN (>)
+      Prófið nú  nav > a  og gefið honum litinn #c2571a.
+      Hvaða tengill breytist? Hvers vegna bara hann? */
+
+      nav a{
+            color:#c2571a     
+      }
+
+/* 3. AFKOMENDUR vs. BÖRN
+      a) Skrifið  article p { line-height: 1.6; }
+      b) Skrifið  article > p { color: #555; }
+      Fær tilvitnunin (inni í .tilvitnun) gráa litinn? Hvers vegna ekki? */
+
+      article p {
+            line-height: 1.6;
+      }
+      
+      article > p {
+            color:#555  
+      }
+
+/* 4. Gerið  .tilvitnun p  skáletrað (italic). */
+
+      .tilvitnun p {
+            font-style: italic;
+      }
+
+
+
+/* 5. NÆSTA SYSTKINI (+)
+      Fyrsta málsgreinin beint á eftir hverri h2 er "ingress":
+      20px og feitletruð. */
+
+
+
+/* 6. PSEUDO-CLASS :hover
+      Þegar músin fer yfir tengil í nav: litur #c2571a og undirstrikun. */
+
+
+
+/* 7. PSEUDO-CLASSES :first-child og :nth-child
+      a) Fyrsti liðurinn í .listi verður feitletraður.
+      b) Liðir með sléttri tölu (even) fá bakgrunn #eeeeee. */
+
+      .listi li:first-child {
+            font-weight: bold;
+      }
+
+      .listi li:nth-child(even) {
+            background-color:green;
+      }
+
+      .listi li:nth-child(odd) {
+            background-color:rgb(150, 172, 150);
+      }
+
+
+
+/* 8. ATTRIBUTE-SELECTOR
+      Aðeins email-reiturinn fær rammann  2px solid #c2571a. */
+
+
+
+/* 9. ERFÐIR (inheritance)
+      Skrifið  aside { color: #c2571a; border: 1px solid #ccc; }
+      Erfa h3 og li litinn? Erfa þau rammann? */
+
+
+
+/* =====================================================
+   10. SPECIFICITY-GÁTA – EKKI breyta fyrr en við gerum það saman!
+   Spáið fyrst: hvaða lit fær  <p class="gata" id="gata">  ?
+   Reiknið specificity (ID-KLASI-ELEMENT) fyrir hverja reglu.
+   Setjið svo eina og eina reglu í athugasemd og spáið aftur.
+   ===================================================== */
+
+p          { color: red; }
+.gata      { color: orange; }
+footer p   { color: purple; }
+p.gata     { color: blue; }
+#gata      { color: green; }
