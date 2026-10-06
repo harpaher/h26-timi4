@@ -1,0 +1,63 @@
+/* =====================================================
+   ÆFING 3 – Box-model   (gerum saman í tíma)
+   Opnið DevTools (F12 / Cmd+Option+I) og hafið þau opin!
+   ===================================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1b1f3b;
+  background-color: #f4f1ea;
+}
+
+
+/* 1. MIÐJUN MEÐ MARGIN
+      .umgjord á að vera 980px breið og í miðjunni á síðunni.
+      (Vísbending: margin: 0 auto;) */
+
+
+
+/* 2. BORDER
+      .kort fær hvítan bakgrunn og rammann  2px solid #1b1f3b. */
+
+
+
+/* 3. PADDING
+      Textinn klessist upp við rammann. Gefðu .kort  padding: 24px; */
+
+
+
+/* 4. WIDTH + INLINE-BLOCK
+      Við viljum þrjú kort hlið við hlið. Gefðu .kort:
+        display: inline-block;
+        vertical-align: top;
+        width: 300px;
+        margin: 8px;
+      Hvers vegna lendir þriðja kortið í næstu línu?!
+      Reiknið: 300 + ___ + ___ + ___ = ___ px  (sinnum 3 = ?) */
+
+
+
+/* 5. BOX-SIZING
+      Skrifið efst í skrána:
+        * { box-sizing: border-box; }
+      Hvað gerðist? Hvað er kortið nú breitt í DevTools? */
+
+
+
+/* 6. INLINE vs. INLINE-BLOCK
+      a) Gefðu .takki: padding: 10px 20px; bakgrunn #c2571a;
+         hvítan lit; enga undirstrikun.
+      b) Bættu við margin-top: 16px; – virkar það? Hvers vegna ekki?
+      c) Bættu við display: inline-block; – hvað breyttist? */
+
+
+
+/* 7. MARGIN SAMFALL (margin collapse)
+      Gefðu h1  margin-bottom: 40px;  og .inngangur  margin-top: 30px;
+      Mælið bilið í DevTools. Er það 70px? */
+
+
+
+/* 8. BÓNUS
+      - border-radius: 12px; á .kort og .takki
+      - .kort:hover fær  box-shadow: 0 8px 24px rgba(0,0,0,0.15);  */
