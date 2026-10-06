@@ -2,7 +2,7 @@
    ÆFING 3 – Box-model   (gerum saman í tíma)
    Opnið DevTools (F12 / Cmd+Option+I) og hafið þau opin!
    ===================================================== */
-
+  * { box-sizing: border-box; }
 body {
   font-family: Arial, sans-serif;
   color: #1b1f3b;
@@ -14,12 +14,24 @@ body {
       .umgjord á að vera 980px breið og í miðjunni á síðunni.
       (Vísbending: margin: 0 auto;) */
 
+      .umgjord {
+            width: 980px;
+            margin: 0 auto;
+      }
 
 
 /* 2. BORDER
       .kort fær hvítan bakgrunn og rammann  2px solid #1b1f3b. */
 
-
+      .kort {
+            background-color:#b3bba6;
+            border: 2px solid #0a1a24;
+            padding: 24px;
+            display: inline-block;
+            width: 300px;
+            margin: 8px;
+            border-radius: 12px;
+      }
 
 /* 3. PADDING
       Textinn klessist upp við rammann. Gefðu .kort  padding: 24px; */
@@ -50,14 +62,34 @@ body {
       b) Bættu við margin-top: 16px; – virkar það? Hvers vegna ekki?
       c) Bættu við display: inline-block; – hvað breyttist? */
 
+      .takki {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: aqua;
+            text-decoration: none;
+            margin-top: 16px;
+
+      }
+
 
 
 /* 7. MARGIN SAMFALL (margin collapse)
       Gefðu h1  margin-bottom: 40px;  og .inngangur  margin-top: 30px;
       Mælið bilið í DevTools. Er það 70px? */
 
+      .inngangur {
+            mergin-top: 30px      }
+      
+      h1 {
+            margin-bottom: 40px;
+
+      }
 
 
 /* 8. BÓNUS
       - border-radius: 12px; á .kort og .takki
       - .kort:hover fær  box-shadow: 0 8px 24px rgba(0,0,0,0.15);  */
+      .kort:hover {
+            box-shadow: 0 8px 24px #10132c(0,0,0,0,15);
+
+      }
