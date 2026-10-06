@@ -9,7 +9,7 @@
       Gefðu <body> leturgerðina Arial (með sans-serif til vara)
       og textalitinn #333. */
 
-      body {font-family: Arial, Arial, Helvetica, sans-serif;
+      body {font-family: Arial, Helvetica, sans-serif;
             color: #333;
       }
 
@@ -17,8 +17,8 @@
       Gerðu allar <h1> dökkbláar: #1b1f3b */
 
       h1 {
-            color:#1b1f3b
-     }
+            color: rgb(12, 116, 12) 
+      }
       
 
 /* 3. HÓPUN (grouping)
@@ -71,3 +71,4 @@
 /* 8. TILRAUN – universal-selector
       Skrifið  * { color: red; }  neðst og sjáið hvað gerist.
       Eyðið því svo aftur. */
+
