@@ -42,7 +42,7 @@
       .mikilvaegt á að vera feitletrað og appelsínugult: #c2571a
       Spurning: Hvers vegna verða bara tveir listaliðir appelsínugulir? */
 
-      .mikilvægt {
+      .mikilvaegt {
             font-weight: bold;
             color:#c2571a
       }
@@ -53,8 +53,6 @@
       #abending {
             background-color:#fff4cc;
       }
-
-
 
 /* 7. MARGIR KLASAR
       .smatt á að vera 14px og grá: #777

@@ -1,0 +1,31 @@
+/* =====================================================
+   TÍMAVERKEFNI – Kaffi Kóði  
+
+   Breyttu EKKI index.html. Allt CSS fer hér fyrir neðan.
+   =====================================================
+
+   A. Selectors
+   1.  body: Bæta við leturgerð, textalit, bakgrunnur          (element)
+   2.  h1, h2, h3: sama leturgerð í EINNI reglu       (hópun)
+   3.  .verd: feitletrað + áherslulitur
+       .merki: lítill miði með bakgrunnslit           (class)
+   4.  #opnunartimi: sérstakur bakgrunnslitur         (id)
+   5.  nav a: taka af undirstrikun                    (afkomendur)
+   6.  h2 + p: skáletrað                              (systkini)
+   7.  a:hover: annar litur                           (pseudo-class)
+   8.  Annar hver dagur í opnunartíma: bakgrunnur     (:nth-child)
+   9.  input[type="email"]: rammi                     (attribute)
+   10. Specificity (t.d. 0-1-1) í athugasemd við 3 reglur
+
+   B. Box-model
+   11. * { box-sizing: border-box; }  efst
+   12. main: max-width 900px og í miðju (margin: 0 auto)
+   13. .rettur: kort – bakgrunnur, border, padding, margin
+   14. .vinsaelt: þykkari eða öðruvísi litaður rammi
+   15. nav li: hlið við hlið (inline-block) + bil
+   16. header og footer: padding svo texti klessist ekki
+
+   Bónus: kort í .flokkur 3 í röð (inline-block, skrifaðu
+   útreikninginn), .rettur:hover með box-shadow,
+   border-radius, :first-child eða :last-child, eigið litaþema.
+   ===================================================== */

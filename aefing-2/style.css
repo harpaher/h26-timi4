@@ -17,15 +17,15 @@ body {
 
       nav a {
             text-decoration: none;
-            color:#1b1f3b
+            color:#151618
       }
 
 /* 2. BÖRN (>)
       Prófið nú  nav > a  og gefið honum litinn #c2571a.
       Hvaða tengill breytist? Hvers vegna bara hann? */
-
-      nav a{
-            color:#c2571a     
+            <!-- Innskrá verður grænt því það er beint undir navi -->
+      nav > a {
+            color:#07c711     
       }
 
 /* 3. AFKOMENDUR vs. BÖRN
@@ -48,16 +48,25 @@ body {
       }
 
 
-
 /* 5. NÆSTA SYSTKINI (+)
       Fyrsta málsgreinin beint á eftir hverri h2 er "ingress":
       20px og feitletruð. */
 
+      h2 + p {
+            font-size: 20px;
+            font-weight: bold;
+            text-indent: 10px;
+            }
 
+/* h2 + p er h2 plús næsta systkini sem er Innskrá*/
 
 /* 6. PSEUDO-CLASS :hover
       Þegar músin fer yfir tengil í nav: litur #c2571a og undirstrikun. */
 
+      nav a:hover {
+            color:#c2571a; 
+            font-weight: bold; 
+      }
 
 
 /* 7. PSEUDO-CLASSES :first-child og :nth-child
@@ -80,14 +89,20 @@ body {
 
 /* 8. ATTRIBUTE-SELECTOR
       Aðeins email-reiturinn fær rammann  2px solid #c2571a. */
-
-
-
+     
+      input[type="email"] {
+      border: 2px solid #c2571a
+}
 /* 9. ERFÐIR (inheritance)
       Skrifið  aside { color: #c2571a; border: 1px solid #ccc; }
       Erfa h3 og li litinn? Erfa þau rammann? */
 
-
+      aside {
+            /* Erfist */
+            color:#c2571a;
+            /* Erfist ekki*/
+            border: 1px solid #ccc;
+      }
 
 /* =====================================================
    10. SPECIFICITY-GÁTA – EKKI breyta fyrr en við gerum það saman!
