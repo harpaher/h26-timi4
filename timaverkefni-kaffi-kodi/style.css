@@ -6,6 +6,8 @@
 
    A. Selectors
    1.  body: Bæta við leturgerð, textalit, bakgrunnur          (element)
+
+
    2.  h1, h2, h3: sama leturgerð í EINNI reglu       (hópun)
    3.  .verd: feitletrað + áherslulitur
        .merki: lítill miði með bakgrunnslit           (class)
@@ -29,3 +31,9 @@
    útreikninginn), .rettur:hover með box-shadow,
    border-radius, :first-child eða :last-child, eigið litaþema.
    ===================================================== */
+
+   body {
+    font-style: italic;
+    color:rgb(56, 27, 27);
+    background-color:darkkhaki;
+   }
