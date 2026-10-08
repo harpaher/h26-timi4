@@ -24,7 +24,8 @@
 /* 3. HÓPUN (grouping)
       Gefðu h1 OG h2 leturgerðina Georgia (serif) í EINNI reglu. */
 
-      h1, h2 {font-family: Georgia, 'Times New Roman', Times, serif;
+      h1, h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
       }
 
 
