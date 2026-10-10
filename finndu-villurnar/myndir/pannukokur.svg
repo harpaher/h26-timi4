@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#1e1a3a"/>
+  <ellipse cx="400" cy="250" rx="260" ry="70" fill="#d9d9e8"/>
+  <ellipse cx="400" cy="232" rx="220" ry="52" fill="#e8b766"/>
+  <ellipse cx="400" cy="214" rx="210" ry="48" fill="#f0c97c"/>
+  <ellipse cx="400" cy="196" rx="200" ry="45" fill="#f5d48e"/>
+  <ellipse cx="380" cy="190" rx="60" ry="12" fill="#c98f3a" opacity=".5"/>
+  <ellipse cx="460" cy="205" rx="40" ry="8" fill="#c98f3a" opacity=".4"/>
+  <text x="400" y="360" fill="#fff" font-family="sans-serif" font-size="28" text-anchor="middle">Pönnukökur</text>
+</svg>
