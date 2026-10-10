@@ -1,3 +1,5 @@
+Harpa Hermannsdóttir
+
 /* =====================================================
    TÍMAVERKEFNI – Kaffi Kóði  
 
@@ -31,9 +33,96 @@
    útreikninginn), .rettur:hover með box-shadow,
    border-radius, :first-child eða :last-child, eigið litaþema.
    ===================================================== */
+* {
+  box-sizing: border-box;
+}
 
-   body {
-    font-style: italic;
-    color:rgb(56, 27, 27);
-    background-color:darkkhaki;
-   }
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(56, 27, 27);
+  background-color: rgb(176, 172, 114);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* 0-1-0 */
+.verd {
+  font-weight: bold;
+  color: brown;
+}
+
+.merki {
+  background-color: rgb(140, 155, 140);
+  padding: 7px;
+  border-radius: 15px;
+}
+/* 1-0-0 */
+#opnunartimi {
+  background-color: rgb(172, 169, 169);
+}
+/* 0-0-2 */
+nav a {
+  text-decoration: none;
+  color: beige;
+}
+
+h2 + p {
+  font-style: italic;
+}
+
+a:hover {
+  color: chocolate;
+}
+
+#opnunartimi li:nth-child(odd) {
+  background-color: rgb(138, 138, 128);
+}
+
+input[type="email"] {
+  border: 2px solid lightcoral;
+}
+
+.rettur {
+  background-color: blanchedalmond;
+  border: 2px solid rgb(14, 13, 13);
+  padding: 5px;
+  margin: 2px 0px;
+  border-radius: 10px;
+}
+
+.flokkur {
+  width: 430px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.vinsaelt {
+  border: 3px solid orangered;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 5px 0;
+  padding: 10px;
+  margin: 30px 0px;
+}
+/* yfirstrikuð regla color */
+header,
+footer {
+  color: rgb(210, 194, 194);
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(40, 28, 28);
+}
+
+.rettur:hover {
+  box-shadow: 0 4px 10px gray;
+}
